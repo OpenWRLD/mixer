@@ -336,6 +336,7 @@ default_exclusions = {
                 "active_shape_key",
                 # temporary
                 "vertex_groups",
+                "bound_box",
             ]
         )
     ],
@@ -397,6 +398,7 @@ safe_depsgraph_updates = (
     T.Image,
     # no generic sync of GreasePencil, use VRtist message
     # T.GreasePencil,
+    T.Lattice,
     T.Light,
     T.Material,
     # no generic sync of Mesh, use VRtist message
@@ -421,6 +423,7 @@ safe_blenddata_collections = [
     "collections",
     "grease_pencils",
     "images",
+    "lattices",
     "lights",
     "materials",
     "meshes",
